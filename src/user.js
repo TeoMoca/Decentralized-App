@@ -3,7 +3,7 @@ import "gun/sea";
 import "gun/axe";
 import { writable } from "svelte/store";
 
-export const DB = GUN("localhost:5000");
+export const DB = GUN("https://decentralizedapp.herokuapp.com/");
 
 export const user = DB.user().recall({ sessionStorage: true });
 
